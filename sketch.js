@@ -84,12 +84,13 @@ function setup() {
   
 
 
-
+  //C29
   //cria corta com 7 pedaçoes, na parte de cima da tela, ao centro
-  rope = new Rope(7,{x:245,y:30});
+  
 
+  //C29
   //cria o chão na parte inferior da tela
-  ground = new Ground(200,690,600,20);
+  
 
 
   blink.frameDelay = 20;
@@ -105,14 +106,13 @@ function setup() {
  //adicionar animações
 
 
-
+  //C29
   //cria a fruta e adiciona ao composto
-  fruit = Bodies.circle(300,300,20);
-  Matter.Composite.add(rope.body,fruit);
+  
 
-
+  //C29
   //cria a conexão entre a fruta e a corda
-  fruit_con = new Link(rope,fruit);
+  
  
 
   imageMode(CENTER);
@@ -124,8 +124,10 @@ function setup() {
 function draw() 
 {
   background(51);
+  
+  //C30
   //imagem de fundo
-  image(bg_img,0,0,490,690);
+ 
 
   //C31
   //fazer a fruta aparecer somente se ela ainda não foi comida
@@ -136,11 +138,14 @@ function draw()
   //C30
   //colocar imagem da fruta
   
-  //exibe a corda
-  rope.show();
   
+  //C29
+  //exibe a corda
+  
+  
+  //C29
   //exibe o chão
-  ground.show();
+ 
 
   //C30
   //comando para desenhar as sprites na tela
