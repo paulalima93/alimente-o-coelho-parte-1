@@ -3,23 +3,19 @@ class Link{
     {
       var lastlink = bodyA.body.bodies.length-2;
       console.log(lastlink);
-      this.link = Constraint.create(
-        {
+      this.link = Constraint.create({
+          //passar valores das options bodyA, pointA, bodyB, pointB, lengt, length,stiffness
           
-          bodyA:bodyA.body.bodies[lastlink],
-          pointA:{x:0,y:0},
-          bodyB:bodyB,
-          pointB:{x:0,y:0},
-          length:-10,
-          stiffness:0.01
         });
-        World.add(engine.world,this.link);
+        //adicionar restrição ao mundo
+        
     } 
 
     detach()
     {
-      World.remove(engine.world,this.link);
-     
+     //C30
+     //remover link do mundo
+      
     }
 }
 
